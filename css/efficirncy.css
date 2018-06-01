@@ -1,0 +1,195 @@
+.banner{
+  height: 600px;
+  overflow-y: hidden;
+  background-image: url('../img/efficiency.png');
+  background-position: center;
+  background-size: cover;
+  .banner-main{
+    span{
+      display: block;
+      text-align: center;
+      margin: 100px auto 30px;
+      svg{
+        cursor: pointer;
+      }
+    }
+    h3{
+      font-weight: 600;
+      font-size: 5.7rem;
+      letter-spacing: 10px;
+      text-align: center;
+      color: rgba(0,0,0,.1);
+      transform: scale(1.2);
+      transition: all 2s ease-out;
+    }
+  }
+}
+.efficiency-main{
+  
+  .efficiency-main-intro{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+    padding-bottom: 20px;
+    .intro-title{
+      width: 40%;
+      padding-right: 60px;
+      h3{
+        font-weight: 600;
+        font-size: 2.6rem;
+        color: #009944;
+        letter-spacing: 3.16px;
+        line-height: 40px;
+      }
+    }
+    .intro-text{
+      width: 60%;
+      p{
+        font-size: 1.4rem;
+        letter-spacing: 0.23px;
+        line-height: 23px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .efficiency-carousel{
+    border-top: 1px solid #c3c3c3;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    h3{
+      font-family: DIN-Bold;
+      font-size: 4rem;
+      color: #009944;
+      letter-spacing: 1.88px;
+      text-align: center;
+      line-height: 62px;
+      text-transform: uppercase;
+    }
+    h4{
+      font-weight: 600;
+      font-size: 2.4rem;
+      color: #009944;
+      letter-spacing: 1.76px;
+      text-align: center;
+      line-height: 24px;
+    }
+    .item__arrows{
+      float: right;
+      margin-top: 20px;
+      span{
+        cursor: pointer;
+        &:last-child{
+          margin-left: 50px;
+        }
+      }
+    }
+    .efficiency-carousel-main{
+      padding-top: 80px;
+      overflow: hidden;
+      height: 680px;
+      width: 100%;
+      ul{
+        // width: 2000px;
+        
+        li{
+          width: 390px;
+          &.active .item-wall{
+            transform: scale(1.1);
+          }
+          &:last-child{
+            // margin-right: 0;
+          }
+          &:nth-child(1) .item-wall{
+            background-image: url('../img/eff1.png');
+            background-position: right bottom;
+            background-size: 180px;
+            background-repeat: no-repeat;
+          }
+          &:nth-child(2) .item-wall{
+            background-image: url('../img/eff2.png');
+            background-position: right 200px;
+            background-size: 120px;
+            background-repeat: no-repeat;
+            p{
+              font-size: 1.2rem;
+            }
+          }
+          &:nth-child(3) .item-wall{
+            background-image: url('../img/eff3.png');
+            background-position: right 300px;
+            background-size: 160px;
+            background-repeat: no-repeat;
+          }
+          .item-wall{
+            background: #FFFFFF;
+            border: 1px solid rgba(195, 195, 195, 0.48);
+            transition: all .3s ease-out;
+            transform: scale(1);
+            margin-right: 60px;
+            border-radius: 6px;
+            padding: 15px 80px 15px 30px;
+            height: 520px;
+            .item-title{
+              display: inline-block;
+              border-bottom: 3px solid #009944;
+              padding-bottom: 3px;
+              margin-bottom: 15px;
+              h5{
+                font-weight: 600;
+                font-size: 1.6rem;
+                letter-spacing: 1.7px;
+                line-height: 24px;
+              }
+            }
+            p{
+              font-size: 1.4rem;
+              letter-spacing: 1.5px;
+              text-align: justify;
+              line-height: 24px;
+            }
+            .list{
+              margin-top: 20px;
+              p{
+                font-size: 1.7rem;
+                letter-spacing: 2.07px;
+                text-align: justify;
+                line-height: 32px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+/*电脑*/
+@media screen  and (min-width:1400px){
+}
+/*笔记本*/
+@media screen and (max-width: 1399px) and (min-width: 1200px){
+   
+}
+@media screen and (max-width: 1199px) and (min-width: 1023px){
+}  
+/*横向平板*/
+@media screen and (max-width: 1099px) and (min-width: 1023px){
+}   
+ 
+/*平板*/
+@media screen and (max-width: 1023px) and (min-width: 768px){
+}
+/*笔记本高度*/
+@media screen and (max-height: 767px) and (min-height: 600px){
+
+}
+/*手机*/
+@media screen and (max-width: 767px){
+}
+
+@media screen and (max-width: 320px){
+}
