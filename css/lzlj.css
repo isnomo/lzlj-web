@@ -1,0 +1,102 @@
+html, body {
+  position: relative;
+  height: 100%;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.lzlj-main{
+  .bg-wrapper{
+    .select-main{
+      position: absolute;
+      width: 90%;
+      left: 50%;
+      bottom: 5%;
+      transform: translate(-50%);
+      .select-main__title{
+        text-align: left;
+        border: 3px solid #4b2c20;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+        h3{
+          font-size: 15px;
+          color: #4b2c20;
+          font-weight: 600;
+        }
+      }
+      .select-main__option{
+        text-align: left;
+        border: 3px solid #4b2c20;
+        border-radius: 5px;
+        padding: 10px;
+        label{
+          display: block;
+          font-size: 14px;
+          margin-bottom: 8px;
+          color: #4b2c20;
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+      .next-page{
+        text-align: right;
+        float: right;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+    }
+    .swiper-slide:nth-child(1){
+      background: url('../img/lzlj/11.png')center no-repeat;
+      background-size: 100%;
+    }
+    .swiper-slide:nth-child(2){
+      background: url('../img/lzlj/22.png')center no-repeat;
+      background-size: 100%;
+    }
+    .swiper-slide:nth-child(3){
+      background: url('../img/lzlj/33.png')center no-repeat;
+      background-size: 100%;
+    }
+    .swiper-slide:nth-child(4){
+      background: url('../img/lzlj/44.png')center no-repeat;
+      background-size: 100%;
+    }
+    .swiper-slide:nth-child(5){
+      background: url('../img/lzlj/55.png')center no-repeat;
+      background-size: 100%;
+    }
+    .swiper-slide:nth-child(6){
+      background: url('../img/lzlj/66.png')center no-repeat;
+      background-size: 100%;
+    }
+    .swiper-slide:nth-child(7){
+      background: url('../img/lzlj/77.png')center no-repeat;
+      background-size: 100%;
+    }
+    .swiper-slide:nth-child(8){
+      background: url('../img/lzlj/88.png')center no-repeat;
+      background-size: 100%;
+    }
+  }
+}
