@@ -15,7 +15,7 @@
       height: 100%;
     }
     body {
-      background: #eee;
+      background: #fff;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 14px;
       color:#000;
@@ -46,22 +46,28 @@
       align-items: center;
     }
     .swiper-slide:nth-child(1){
-      background: red;
+      background: url('img/lzlj/11.png')center no-repeat;
+      background-size: cover;
     }
     .swiper-slide:nth-child(2){
-      background: greenyellow;
+      background: url('img/lzlj/22.png')center no-repeat;
+      background-size: cover;
     }
     .swiper-slide:nth-child(3){
-      background: wheat;
+      background: url('img/lzlj/33.png')center no-repeat;
+      background-size: cover;
     }
     .swiper-slide:nth-child(4){
-      background: rosybrown;
+      background: url('img/lzlj/44.png')center no-repeat;
+      background-size: cover;
     }
     .swiper-slide:nth-child(5){
-      background: yellowgreen;
+      background: url('img/lzlj/55.png')center no-repeat;
+      background-size: cover;
     }
     .swiper-slide:nth-child(6){
-      background: teal;
+      background: url('img/lzlj/66.png')center no-repeat;
+      background-size: cover;
     }
   </style>
 </head>
@@ -69,16 +75,29 @@
   <!-- Swiper -->
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div data-hash="sw1" class="swiper-slide">   </div>
-      <div data-hash="sw2" class="swiper-slide">Slide 2</div>
-      <div data-hash="sw3" class="swiper-slide">Slide 3</div>
-      <div data-hash="sw4" class="swiper-slide">Slide 4</div>
-      <div data-hash="sw5" class="swiper-slide">Slide 5</div>
-      <div data-hash="sw6" class="swiper-slide">Slide 6</div>
+      <div data-hash="sw1" class="swiper-slide">
+        <div class="select-main">
+          <div class="select-main__title">
+            <h3>Q1、忙碌工作一天后，今天你是几点下班？</h3>
+          </div>
+          <div class="select-main__option">
+            <select name="" id="">
+              <option value="">A、朝九晚五准点走人</option>
+              <option value="">B、朝九晚五准点走人</option>
+              <option value="">C、朝九晚五准点走人</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div data-hash="sw2" class="swiper-slide"></div>
+      <div data-hash="sw3" class="swiper-slide"></div>
+      <div data-hash="sw4" class="swiper-slide"></div>
+      <div data-hash="sw5" class="swiper-slide"></div>
+      <div data-hash="sw6" class="swiper-slide"></div>
     </div>
     <!-- Add Arrows -->
     <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <!-- <div class="swiper-button-prev"></div> -->
   </div>
 
   <!-- Swiper JS -->
@@ -89,14 +108,14 @@
     var swiper = new Swiper('.swiper-container', {
       navigation: {
         nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        // prevEl: '.swiper-button-prev',
       },
       speed:500,
       // effect : 'cube',
       allowTouchMove: false,
       hashNavigation: {
         watchState: true,
-      },
+      }
     });
   </script>
 </body>
