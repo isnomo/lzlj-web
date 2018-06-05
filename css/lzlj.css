@@ -1,6 +1,10 @@
-html, body {
+html, body, form {
   position: relative;
   height: 100%;
+}
+
+.lzlj-main{
+  display: none;
 }
 .swiper-container {
   width: 100%;
@@ -24,6 +28,39 @@ html, body {
   -webkit-align-items: center;
   align-items: center;
 }
+.rotate-hint{
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 999;
+  .rotate-hint__main{
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    i{
+      background-image: url('../img/rotate.png');
+      display: inline-block;
+      width: 67px;
+      height: 109px;
+      transform: rotate(90deg);
+      animation: rotation infinite 1.5s ease-in-out;
+      background-size: 67px;
+    }
+    p{
+      margin-top: 10px;
+      font-size: 15px;
+      color: #fff;
+    }
+  }
+}
 .lzlj-main{
   .bg-wrapper{
     .select-main{
@@ -38,6 +75,7 @@ html, body {
         border-radius: 5px;
         padding: 10px;
         margin-bottom: 10px;
+        background: #fff;
         h3{
           font-size: 15px;
           color: #4b2c20;
@@ -49,6 +87,7 @@ html, body {
         border: 3px solid #4b2c20;
         border-radius: 5px;
         padding: 10px;
+        background: #fff;
         label{
           display: block;
           font-size: 14px;
@@ -56,6 +95,9 @@ html, body {
           color: #4b2c20;
           &:last-child{
             margin-bottom: 0;
+          }
+          input{
+            vertical-align: middle;
           }
         }
       }
@@ -100,3 +142,40 @@ html, body {
     }
   }
 }
+
+
+
+
+
+/*电脑*/
+@media screen  and (min-width:1400px){
+
+}
+/*笔记本*/
+@media screen and (max-width: 1399px) and (min-width: 1200px){
+   
+}
+@media screen and (max-width: 1199px) and (min-width: 1023px){
+}  
+/*横向平板*/
+@media screen and (max-width: 1099px) and (min-width: 1023px){
+}   
+ 
+/*平板*/
+@media screen and (max-width: 1023px) and (min-width: 769px){
+}
+/*笔记本高度*/
+@media screen and (max-height: 767px) and (min-height: 600px){
+  
+}
+/*手机*/
+@media screen and (max-width: 768px){
+  .lzlj-main{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 320px){
+}
+
+
