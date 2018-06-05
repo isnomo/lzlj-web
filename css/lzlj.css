@@ -93,11 +93,18 @@ html, body, form {
           font-size: 14px;
           margin-bottom: 8px;
           color: #4b2c20;
+          position: relative;
+          padding-left: 22px;
+          user-select: none;
           &:last-child{
             margin-bottom: 0;
           }
           input{
-            vertical-align: sub;
+            position: absolute;
+            top: 4px;
+            margin: 0;
+            left: 0;
+            // transform: translateY(-50%);
           }
         }
       }
@@ -108,37 +115,34 @@ html, body, form {
         margin-top: 5px;
       }
     }
-    .swiper-slide:nth-child(1){
-      background: url('../img/lzlj/11.png')center no-repeat;
+    .swiper-slide{
+      background-repeat: no-repeat;
+      background-position: center;
       background-size: 100%;
+    }
+    .swiper-slide:nth-child(1){
+      background-image: url('../img/lzlj/11.png');
     }
     .swiper-slide:nth-child(2){
-      background: url('../img/lzlj/22.png')center no-repeat;
-      background-size: 100%;
+      background-image: url('../img/lzlj/22.png');
     }
     .swiper-slide:nth-child(3){
-      background: url('../img/lzlj/33.png')center no-repeat;
-      background-size: 100%;
+      background-image: url('../img/lzlj/33.png');
     }
     .swiper-slide:nth-child(4){
-      background: url('../img/lzlj/44.png')center no-repeat;
-      background-size: 100%;
+      background-image: url('../img/lzlj/44.png');
     }
     .swiper-slide:nth-child(5){
-      background: url('../img/lzlj/55.png')center no-repeat;
-      background-size: 100%;
+      background-image: url('../img/lzlj/55.png');
     }
     .swiper-slide:nth-child(6){
-      background: url('../img/lzlj/66.png')center no-repeat;
-      background-size: 100%;
+      background-image: url('../img/lzlj/66.png');
     }
     .swiper-slide:nth-child(7){
-      background: url('../img/lzlj/77.png')center no-repeat;
-      background-size: 100%;
+      background-image: url('../img/lzlj/77.png');
     }
     .swiper-slide:nth-child(8){
-      background: url('../img/lzlj/88.png')center no-repeat;
-      background-size: 100%;
+      background-image: url('../img/lzlj/88.png');
     }
   }
 }
