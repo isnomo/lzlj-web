@@ -37,7 +37,7 @@
 
   
   $(window).load(() => {
-  
+    $('.loading').fadeOut(500)
   })
 
   $(window).scroll(() => {
