@@ -31,13 +31,12 @@
   $('#complete-button').on('click',function(event){
     let form = document.getElementById("userForm");
     let selectData = new FormData(form)
-    console.log(selectData)
     console.log(selectData.get('page1'))
   })
 
   
   $(window).load(() => {
-    $('.loading').fadeOut(500)
+    $('.loading').fadeOut(300)
   })
 
   $(window).scroll(() => {
