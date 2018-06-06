@@ -94,14 +94,14 @@ html, body, form {
           margin-bottom: 8px;
           color: #4b2c20;
           position: relative;
-          padding-left: 22px;
+          padding-left: 25px;
           user-select: none;
           &:last-child{
             margin-bottom: 0;
           }
           input{
             position: absolute;
-            top: 4px;
+            top: 2px;
             margin: 0;
             left: 0;
             // transform: translateY(-50%);
