@@ -14,7 +14,15 @@
       // prevEl: '.swiper-button-prev',
     },
     speed: 500,
-    // effect : 'cube',
+    on:{
+      slideChange: function(){
+        if(this.activeIndex == 5){
+          setTimeout(()=>{
+            $('.hand-animate').addClass('active')
+          },300)
+        }
+      },
+    },
     allowTouchMove: false,
     // hashNavigation: {
     //   watchState: true,
@@ -31,7 +39,7 @@
   $('#complete-button').on('click',function(event){
     let form = document.getElementById("userForm");
     let selectData = new FormData(form)
-    console.log(selectData.get('page1'))
+    console.log(selectData.get('page8'))
   })
 
   
