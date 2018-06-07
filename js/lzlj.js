@@ -39,7 +39,14 @@
   $('#complete-button').on('click',function(event){
     let form = document.getElementById("userForm");
     let selectData = new FormData(form)
-    console.log(selectData.get('page8'))
+    let resultsData = []
+    $('input[type=radio]').each(function(){
+      if($(this).prop('checked')){
+        resultsData.push($(this).val())
+      }
+    })
+    console.log(resultsData)
+    location.href = 'result.html'
   })
 
   
