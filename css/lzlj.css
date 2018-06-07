@@ -117,32 +117,32 @@ html, body, form {
     }
     .swiper-slide{
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: top;
       background-size: 100%;
     }
     .swiper-slide:nth-child(1){
-      background-image: url('../img/lzlj/11.png');
+      background-image: url('../img/lzlj/1.png');
     }
     .swiper-slide:nth-child(2){
-      background-image: url('../img/lzlj/22.png');
+      background-image: url('../img/lzlj/2.png');
     }
     .swiper-slide:nth-child(3){
-      background-image: url('../img/lzlj/33.png');
+      background-image: url('../img/lzlj/3.png');
     }
     .swiper-slide:nth-child(4){
-      background-image: url('../img/lzlj/44.png');
+      background-image: url('../img/lzlj/4.png');
     }
     .swiper-slide:nth-child(5){
-      background-image: url('../img/lzlj/55.png');
+      background-image: url('../img/lzlj/5.png');
     }
     .swiper-slide:nth-child(6){
-      background-image: url('../img/lzlj/66.png');
+      background-image: url('../img/lzlj/6.png');
     }
     .swiper-slide:nth-child(7){
-      background-image: url('../img/lzlj/77.png');
+      background-image: url('../img/lzlj/7.png');
     }
     .swiper-slide:nth-child(8){
-      background-image: url('../img/lzlj/88.png');
+      background-image: url('../img/lzlj/8.png');
     }
   }
 }
