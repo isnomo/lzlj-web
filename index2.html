@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit" />
+  <meta name="keywords" content="泸州老窖京东旗舰店 618 京东 泸州老窖">
+  <meta name="description" content="泸州老窖京东旗舰店618京东旗舰店大促！">
+  <link rel="icon" href="img/favicon.ico">
+  <title>泸州老窖京东旗舰店</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+  <link rel="stylesheet/less" href="css/nomo-css.css">
+  <link rel="stylesheet/less" href="css/index.css">
+  <style>
+    .loading {
+      position: fixed;
+      z-index: 888;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      text-align: center;
+      background: rgb(105, 141, 191);
+    }
+
+    .loading-main {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      margin-left: -32px;
+      margin-top: -32px;
+      /* transform: translate(-50%,-50%); */
+    }
+
+    /* loading */
+
+    .la-ball-spin-clockwise-fade-rotating,
+    .la-ball-spin-clockwise-fade-rotating>div {
+      position: relative;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .la-ball-spin-clockwise-fade-rotating {
+      display: block;
+      font-size: 0;
+      color: #fff;
+    }
+
+    .la-ball-spin-clockwise-fade-rotating.la-dark {
+      color: #333;
+    }
+
+    .la-ball-spin-clockwise-fade-rotating>div {
+      display: inline-block;
+      float: none;
+      background-color: currentColor;
+      border: 0 solid currentColor;
+    }
+
+    .la-ball-spin-clockwise-fade-rotating {
+      width: 32px;
+      height: 32px;
+      -webkit-animation: ball-spin-clockwise-fade-rotating-rotate 6s infinite linear;
+      -moz-animation: ball-spin-clockwise-fade-rotating-rotate 6s infinite linear;
+      -o-animation: ball-spin-clockwise-fade-rotating-rotate 6s infinite linear;
+      animation: ball-spin-clockwise-fade-rotating-rotate 6s infinite linear;
+    }
+
+    .la-ball-spin-clockwise-fade-rotating>div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      margin-top: -4px;
+      margin-left: -4px;
+      border-radius: 100%;
+      -webkit-animation: ball-spin-clockwise-fade-rotating 1s infinite linear;
+      -moz-animation: ball-spin-clockwise-fade-rotating 1s infinite linear;
+      -o-animation: ball-spin-clockwise-fade-rotating 1s infinite linear;
+      animation: ball-spin-clockwise-fade-rotating 1s infinite linear;
+    }
+
+    .la-ball-spin-clockwise-fade-rotating>div:nth-child(1) {
+      top: 5%;
+      left: 50%;
+      -webkit-animation-delay: -.875s;
+      -moz-animation-delay: -.875s;
+      -o-animation-delay: -.875s;
+      animation-delay: -.875s;
+    }
+
+    .la-ball-spin-clockwise-fade-rotating>div:nth-child(2) {
+      top: 18.1801948466%;
+      left: 81.8198051534%;
+      -webkit-animation-delay: -.75s;
+      -moz-animation-delay: -.75s;
+      -o-animation-delay: -.75s;
+      animation-delay: -.75s;
+    }
+
+    .la-ball-spin-clockwise-fade-rotating>div:nth-child(3) {
+      top: 50%;
+      left: 95%;
+      -webkit-animation-delay: -.625s;
+      -moz-animation-delay: -.625s;
+      -o-animation-delay: -.625s;
+      animation-delay: -.625s;
+    }
+
+    .la-ball-spin-clockwise-fade-rotating>div:nth-child(4) {
+      top: 81.8198051534%;
+      left: 81.8198051534%;
+      -webkit-animation-delay: -.5s;
+      -moz-animation-delay: -.5s;
+      -o-animation-delay: -.5s;
+      animation-delay: -.5s;
+    }
+
+    .la-ball-spin-clockwise-fade-rotating>div:nth-child(5) {
+      top: 94.9999999966%;
+      left: 50.0000000005%;
+      -webkit-animation-delay: -.375s;
+      -moz-animation-delay: -.375s;
+      -o-animation-delay: -.375s;
+      animation-delay: -.375s;
+    }
+
+    .la-ball-spin-clockwise-fade-rotating>div:nth-child(6) {
+      top: 81.8198046966%;
+      left: 18.1801949248%;
+      -webkit-animation-delay: -.25s;
+      -moz-animation-delay: -.25s;
+      -o-animation-delay: -.25s;
+      animation-delay: -.25s;
+    }
+
+    .la-ball-spin-clockwise-fade-rotating>div:nth-child(7) {
+      top: 49.9999750815%;
+      left: 5.0000051215%;
+      -webkit-animation-delay: -.125s;
+      -moz-animation-delay: -.125s;
+      -o-animation-delay: -.125s;
+      animation-delay: -.125s;
+    }
+
+    .la-ball-spin-clockwise-fade-rotating>div:nth-child(8) {
+      top: 18.179464974%;
+      left: 18.1803700518%;
+      -webkit-animation-delay: 0s;
+      -moz-animation-delay: 0s;
+      -o-animation-delay: 0s;
+      animation-delay: 0s;
+    }
+
+    .la-ball-spin-clockwise-fade-rotating.la-sm {
+      width: 16px;
+      height: 16px;
+    }
+
+    .la-ball-spin-clockwise-fade-rotating.la-sm>div {
+      width: 4px;
+      height: 4px;
+      margin-top: -2px;
+      margin-left: -2px;
+    }
+
+    .la-ball-spin-clockwise-fade-rotating.la-2x {
+      width: 64px;
+      height: 64px;
+    }
+
+    .la-ball-spin-clockwise-fade-rotating.la-2x>div {
+      width: 16px;
+      height: 16px;
+      margin-top: -8px;
+      margin-left: -8px;
+    }
+
+    .la-ball-spin-clockwise-fade-rotating.la-3x {
+      width: 96px;
+      height: 96px;
+    }
+
+    .la-ball-spin-clockwise-fade-rotating.la-3x>div {
+      width: 24px;
+      height: 24px;
+      margin-top: -12px;
+      margin-left: -12px;
+    }
+
+    /*
+    * Animations
+    */
+
+    @-webkit-keyframes ball-spin-clockwise-fade-rotating-rotate {
+      100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+      }
+    }
+
+    @-moz-keyframes ball-spin-clockwise-fade-rotating-rotate {
+      100% {
+        -moz-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+      }
+    }
+
+    @-o-keyframes ball-spin-clockwise-fade-rotating-rotate {
+      100% {
+        -o-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+      }
+    }
+
+    @keyframes ball-spin-clockwise-fade-rotating-rotate {
+      100% {
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+      }
+    }
+
+    @-webkit-keyframes ball-spin-clockwise-fade-rotating {
+      50% {
+        opacity: .25;
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+    }
+
+    @-moz-keyframes ball-spin-clockwise-fade-rotating {
+      50% {
+        opacity: .25;
+        -moz-transform: scale(.5);
+        transform: scale(.5);
+      }
+      100% {
+        opacity: 1;
+        -moz-transform: scale(1);
+        transform: scale(1);
+      }
+    }
+
+    @-o-keyframes ball-spin-clockwise-fade-rotating {
+      50% {
+        opacity: .25;
+        -o-transform: scale(.5);
+        transform: scale(.5);
+      }
+      100% {
+        opacity: 1;
+        -o-transform: scale(1);
+        transform: scale(1);
+      }
+    }
+
+    @keyframes ball-spin-clockwise-fade-rotating {
+      50% {
+        opacity: .25;
+        -webkit-transform: scale(.5);
+        -moz-transform: scale(.5);
+        -o-transform: scale(.5);
+        transform: scale(.5);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+      }
+    }
+  </style>
+
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="rotate-hint">
+    <div class="rotate-hint__main">
+      <i></i>
+      <p>为了更好的体验，请使用竖屏浏览。</p>
+    </div>
+  </div>
+  <div class="loading">
+    <div class="la-ball-spin-clockwise-fade-rotating la-2x loading-main">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <form id="userForm" method="post">
+    <div class="swiper-container lzlj-main">
+      <div class="swiper-wrapper bg-wrapper">
+        <div data-hash="sw1" class="swiper-slide">
+          <div class="page-bg"></div>
+          <div class="page-select">
+            <div class="select-main">
+              <div class="select-main__title">
+                <h3>Q1、忙碌工作一天后，今天你是几点下班？</h3>
+              </div>
+              <div class="select-main__option">
+                <label for="page1-1">
+                  <input type="radio" name="page1" value="1A" id="page1-1"> A、朝九晚五准点走人
+                </label>
+                <label for="page1-2">
+                  <input type="radio" name="page1" value="1B" id="page1-2"> B、9点打卡是常态
+                </label>
+                <label for="page1-3">
+                  <input type="radio" name="page1" value="1C" id="page1-3"> C、我爱凌晨的月色
+                </label>
+              </div>
+              <div class="next-page">
+                <button type="button" disabled>下一页</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div data-hash="sw2" class="swiper-slide">
+          <div class="page-bg"></div>
+          <div class="page-select">
+            <div class="select-main">
+              <div class="select-main__title">
+                <h3>Q2、这时朋友电话约你，你们打算约在哪？</h3>
+              </div>
+              <div class="select-main__option">
+                <label for="page2-1">
+                  <input type="radio" name="page2" value="2A" id="page2-1"> A、路边烧烤摊
+                </label>
+                <label for="page2-2">
+                  <input type="radio" name="page2" value="2B" id="page2-2"> B、有格调的酒吧
+                </label>
+                <label for="page2-3">
+                  <input type="radio" name="page2" value="2C" id="page2-3"> C、热闹的火锅店
+                </label>
+              </div>
+              <div class="next-page">
+                <button type="button" disabled>下一页</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-hash="sw3" class="swiper-slide">
+          <div class="page-bg"></div>
+          <div class="page-select">
+            <div class="select-main">
+              <div class="select-main__title">
+                <h3>Q3、回家的路，略带疲惫的你突然想去...</h3>
+              </div>
+              <div class="select-main__option">
+                <label for="page3-1">
+                  <input type="radio" name="page3" value="3A" id="page3-1"> A、享受运动解压
+                </label>
+                <label for="page3-2">
+                  <input type="radio" name="page3" value="3B" id="page3-2"> B、酒吧喝一杯放松
+                </label>
+                <label for="page3-3">
+                  <input type="radio" name="page3" value="3C" id="page3-3"> C、三五好友聚聚
+                </label>
+              </div>
+              <div class="next-page">
+                <button type="button" disabled>下一页</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-hash="sw4" class="swiper-slide">
+          <div class="page-bg"></div>
+          <div class="page-select">
+            <div class="select-main">
+              <div class="select-main__title">
+                <h3>Q4、你们先走进一家酒吧，老板向你推荐一瓶新酒，你觉得他是什么形状？</h3>
+              </div>
+              <div class="select-main__option">
+                <label for="page4-1">
+                  <input type="radio" name="page4" value="4A" id="page4-1"> A、圆柱状
+                </label>
+                <label for="page4-2">
+                  <input type="radio" name="page4" value="4B" id="page4-2"> B、立方体
+                </label>
+                <label for="page4-3">
+                  <input type="radio" name="page4" value="4C" id="page4-3"> C、异形状
+                </label>
+              </div>
+              <div class="next-page">
+                <button type="button" disabled>下一页</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-hash="sw5" class="swiper-slide">
+          <div class="page-bg"></div>
+          <div class="page-select">
+            <div class="select-main">
+              <div class="select-main__title">
+                <h3>Q5、喝到微醺时来了条微醺，你觉得这是...</h3>
+              </div>
+              <div class="select-main__option">
+                <label for="page5-1">
+                  <input type="radio" name="page5" value="5A" id="page5-1"> A、老板：“今天那个案子还要改改，明早9点发给客户”
+                </label>
+                <label for="page5-2">
+                  <input type="radio" name="page5" value="5B" id="page5-2"> B、老妈：“1小时前说就到楼下，你这是到谁家楼下呢”
+                </label>
+                <label for="page5-3">
+                  <input type="radio" name="page5" value="5C" id="page5-3"> C、前任：“我想你了”
+                </label>
+              </div>
+              <div class="next-page">
+                <button type="button" disabled>下一页</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-hash="sw6" class="swiper-slide">
+          <div class="page-bg">
+            <div class="hand-animate"></div>
+          </div>
+          <div class="page-select">
+
+            <div class="select-main">
+              <div class="select-main__title">
+                <h3>Q6、看完这条微信，你想来一杯多少度的酒？</h3>
+              </div>
+              <div class="select-main__option">
+                <label for="page6-1">
+                  <input type="radio" name="page6" value="6A" id="page6-1"> A、还能hold住的20度以下
+                </label>
+                <label for="page6-2">
+                  <input type="radio" name="page6" value="6B" id="page6-2"> B、挑战一下40度左右的
+                </label>
+                <label for="page6-3">
+                  <input type="radio" name="page6" value="6C" id="page6-3"> C、能赶紧睡过去的50度以上
+                </label>
+              </div>
+              <div class="next-page">
+                <button type="button" disabled>下一页</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-hash="sw7" class="swiper-slide">
+          <div class="page-bg"></div>
+          <div class="page-select">
+            <div class="select-main">
+              <div class="select-main__title">
+                <h3>Q7、此刻的你在朋友面前暴露了酒量...</h3>
+              </div>
+              <div class="select-main__option">
+                <label for="page7-1">
+                  <input type="radio" name="page7" value="7A" id="page7-1"> A、一杯断片
+                </label>
+                <label for="page7-2">
+                  <input type="radio" name="page7" value="7B" id="page7-2"> B、高手里的半斤八两
+                </label>
+                <label for="page7-3">
+                  <input type="radio" name="page7" value="7C" id="page7-3"> C、根本停不下来的一直喝
+                </label>
+              </div>
+              <div class="next-page">
+                <button type="button" disabled>下一页</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-hash="sw8" class="swiper-slide">
+          <div class="page-bg"></div>
+          <div class="page-select">
+            <div class="select-main">
+              <div class="select-main__title">
+                <h3>Q8、这一天就要结束了，你选择哪一种睡姿进入梦里？</h3>
+              </div>
+              <div class="select-main__option">
+                <label for="page8-1">
+                  <input type="radio" name="page8" value="8A" id="page8-1"> A、手扶枕头侧身睡
+                </label>
+                <label for="page8-2">
+                  <input type="radio" name="page8" value="8B" id="page8-2"> B、如士兵一般平躺睡
+                </label>
+                <label for="page8-3">
+                  <input type="radio" name="page8" value="8C" id="page8-3"> C、像婴儿那样趴着睡
+                </label>
+              </div>
+              <div class="next-page" id="complete-button">
+                <button type="submit" disabled>生成我的结果</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <!--JS-->
+  <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
+  <!-- <script>
+        window.jQuery || document.write('<script src="js/jquery-1.12.4.min.js"><\/script>')
+      </script> -->
+  <!-- production -->
+  <script src="js/less.min.js" data-env="production"></script>
+  <script src="js/swiper-4.2.6.min.js"></script>
+  <script src="js/lzlj.js"></script>
+</body>
+
+</html>
