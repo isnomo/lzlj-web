@@ -162,7 +162,9 @@ html, body, form {
     }
   }
 }
-
+.gifBg{
+  background-image: url('../img/lzlj/0.png');
+}
 // 结果页面
 .result{
   width: 100%;
@@ -170,7 +172,7 @@ html, body, form {
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
-  background-image: url(http://127.0.0.1:5500/img/lzlj/9.png);
+  background-image: url('../img/lzlj/9.png');
   background-color: #ceddf1;
 }
 
