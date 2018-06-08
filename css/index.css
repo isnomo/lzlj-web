@@ -178,7 +178,10 @@ html, body, form {
       background-image: url('http://cdnvideo.airproce.com/bg/8.png');
     }
     .swiper-slide:nth-child(9){
-      background-image: url('http://cdnvideo.airproce.com/bg/8.png');
+      background-image: url('http://cdnvideo.airproce.com/bg/9.png');
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 100%;
     }
   }
 }
