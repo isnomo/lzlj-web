@@ -147,6 +147,9 @@ html, body, form {
     
     .swiper-slide:nth-child(1){
       background-image: url('../img/bg/0.png');
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 100%;
     }
     .swiper-slide:nth-child(1) .page-bg{
       background-image: url('../img/bg/1.png');

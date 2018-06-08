@@ -65,6 +65,8 @@
   } else {
     $('.rotate-hint').css({ 'display': 'none' })
   }
+
+  console.log(winWidth + 'x' + winHeight)
   // 兼容iphoneX
   if(winWidth / winHeight > 1.8){
     $('.lzlj-main .bg-wrapper .page-select').css({ 'padding': '0 5% 10%' })
