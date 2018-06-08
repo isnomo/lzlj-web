@@ -146,49 +146,52 @@ html, body, form {
     }
     
     .swiper-slide:nth-child(1){
-      background-image: url('../img/bg/0.png');
+      background-image: url('http://cdnvideo.airproce.com/bg/0.png');
       background-repeat: no-repeat;
       background-position: top;
       background-size: 100%;
     }
     .swiper-slide:nth-child(1) .page-bg{
-      background-image: url('../img/bg/1.png');
+      background-image: url('http://cdnvideo.airproce.com/bg/1.png');
       animation: changeBg infinite .7s ease-in-out;
     }
     .swiper-slide:nth-child(2) .page-bg{
-      background-image: url('../img/bg/2.png');
+      background-image: url('http://cdnvideo.airproce.com/bg/2.png');
     }
     .swiper-slide:nth-child(3) .page-bg{
-      background-image: url('../img/bg/3.png');
+      background-image: url('http://cdnvideo.airproce.com/bg/3.png');
     }
     .swiper-slide:nth-child(4) .page-bg{
-      background-image: url('../img/bg/4.png');
+      background-image: url('http://cdnvideo.airproce.com/bg/4.png');
     }
     .swiper-slide:nth-child(5) .page-bg{
-      background-image: url('../img/bg/5.png');
+      background-image: url('http://cdnvideo.airproce.com/bg/5.png');
     }
     .swiper-slide:nth-child(6) .page-bg{
       height: 65%;
-      background-image: url('../img/bg/6.png');
+      background-image: url('http://cdnvideo.airproce.com/bg/6.png');
     }
     .swiper-slide:nth-child(7) .page-bg{
-      background-image: url('../img/bg/7.png');
+      background-image: url('http://cdnvideo.airproce.com/bg/7.png');
     }
     .swiper-slide:nth-child(8) .page-bg{
-      background-image: url('../img/bg/8.png');
+      background-image: url('http://cdnvideo.airproce.com/bg/8.png');
+    }
+    .swiper-slide:nth-child(9){
+      background-image: url('http://cdnvideo.airproce.com/bg/8.png');
     }
   }
 }
 // 结果页面
-.result{
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 95%;
-  background-image: url('../img/lzlj/9.png');
-  background-color: #ceddf1;
-}
+// .result{
+//   width: 100%;
+//   height: 100%;
+//   background-repeat: no-repeat;
+//   background-position: top;
+//   background-size: 95%;
+//   background-image: url('http://cdnvideo.airproce.com/bg/9.png');
+//   background-color: #ceddf1;
+// }
 
 
 
@@ -227,24 +230,24 @@ html, body, form {
 }
 @keyframes changeBg {
   0% {
-    background-image: url('../img/lzlj/1.png');
+    background-image: url('http://cdnvideo.airproce.com/bg/1.png');
   }
   50% {
-    background-image: url('../img/lzlj/0.png');
+    background-image: url('http://cdnvideo.airproce.com/bg/0.png');
   }
   100% {
-    background-image: url('../img/lzlj/1.png');
+    background-image: url('http://cdnvideo.airproce.com/bg/1.png');
   }
 }
 @-webkit-keyframes changeBg {
   0% {
-    background-image: url('../img/lzlj/1.png');
+    background-image: url('http://cdnvideo.airproce.com/bg/1.png');
   }
   50% {
-    background-image: url('../img/lzlj/0.png');
+    background-image: url('http://cdnvideo.airproce.com/bg/0.png');
   }
   100% {
-    background-image: url('../img/lzlj/1.png');
+    background-image: url('http://cdnvideo.airproce.com/bg/1.png');
   }
 }
 
