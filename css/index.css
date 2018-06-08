@@ -83,7 +83,7 @@ html, body, form {
     }
     .page-bg{
       width: 100%;
-      height: 64vh;
+      height: 100%;
       background-repeat: no-repeat;
       background-position: top;
       background-size: 100%;
@@ -95,7 +95,7 @@ html, body, form {
       height: 36vh;
       position: absolute;
       bottom: 0;
-      padding: 0 5%;
+      padding: 0 5% 20px;
       .select-main{
         .select-main__title{
           text-align: left;
