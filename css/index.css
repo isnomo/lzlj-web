@@ -145,6 +145,9 @@ html, body, form {
       }
     }
     
+    .swiper-slide:nth-child(1){
+      background-image: url('../img/bg/0.png');
+    }
     .swiper-slide:nth-child(1) .page-bg{
       background-image: url('../img/bg/1.png');
       animation: changeBg infinite .7s ease-in-out;
@@ -172,9 +175,6 @@ html, body, form {
       background-image: url('../img/bg/8.png');
     }
   }
-}
-.gifBg{
-  background-image: url('../img/bg/0.png');
 }
 // 结果页面
 .result{
