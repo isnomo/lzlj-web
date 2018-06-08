@@ -65,17 +65,17 @@ html, body, form {
   .bg-wrapper{
     .hand-animate{
       width: 80px;
-    height: 172px;
-    background: url('../img/lzlj/hand.png') center no-repeat;
-    background-size: 80px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -20px;
-    transform: translateY(30px);
-    margin-top: 40px;
-    opacity: 0;
-    transition: all 1s ease-out;
+      height: 172px;
+      background: url('../img/lzlj/hand.png') center no-repeat;
+      background-size: 80px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -20px;
+      transform: translateY(30px);
+      margin-top: 40px;
+      opacity: 0;
+      transition: all 1s ease-out;
       &.active{
         transform: translateY(0);
         opacity: 1;
