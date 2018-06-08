@@ -10,7 +10,7 @@
   // init
   var swiper = new Swiper('.swiper-container', {
     navigation: {
-      nextEl: '.next-page',
+      nextEl: '.sw-next',
       // prevEl: '.swiper-button-prev',
     },
     speed: 500,
