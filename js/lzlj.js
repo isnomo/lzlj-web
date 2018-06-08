@@ -59,7 +59,7 @@
       'tags': ['拥有极强的应变能力', '天生的时尚达人', '魅力', '你的爱情能抚平伤痛']
     }
   ]
-
+  alert(winWidth + 'x' + winHeight)
   // 判断是否旋转
   if (winWidth > winHeight) {
     $('.rotate-hint').css({ 'display': 'block' })
@@ -69,9 +69,7 @@
   // 兼容iphoneX
   if(winHeight / 2 > winWidth){
     $('.lzlj-main .bg-wrapper .page-select').css({ 'padding': '0 5% 10%' })
-    alert('长手机')
-  }else{
-    alert('正常手机')
+    // alert('长手机')
   }
 
   // init
