@@ -14,11 +14,11 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
   <link rel="stylesheet/less" href="css/nomo-css.css">
-  <link rel="stylesheet/less" href="css/lzlj.css">
+  <link rel="stylesheet/less" href="css/index.css">
   <style>
     .loading {
       position: fixed;
-      z-index: 888;
+      z-index: 50;
       width: 100%;
       height: 100%;
       top: 0;
@@ -37,6 +37,7 @@
     }
 
     /* loading */
+
     .la-ball-spin-clockwise-fade-rotating,
     .la-ball-spin-clockwise-fade-rotating>div {
       position: relative;
@@ -314,172 +315,207 @@
     <div class="swiper-container lzlj-main">
       <div class="swiper-wrapper bg-wrapper">
         <div data-hash="sw1" class="swiper-slide">
-          <div class="select-main">
-            <div class="select-main__title">
-              <h3>Q1、忙碌工作一天后，今天你是几点下班？</h3>
-            </div>
-            <div class="select-main__option">
-              <label for="page1-1">
-                <input type="radio" name="page1" value="1A" id="page1-1"> A、朝九晚五准点走人
-              </label>
-              <label for="page1-2">
-                <input type="radio" name="page1" value="1B" id="page1-2"> B、9点打卡是常态
-              </label>
-              <label for="page1-3">
-                <input type="radio" name="page1" value="1C" id="page1-3"> C、我爱凌晨的月色
-              </label>
-            </div>
-            <div class="next-page">
-              <button type="button" disabled>下一页</button>
+          <div class="page-bg"></div>
+          <div class="page-select">
+            <div class="select-main">
+              <div class="select-main__title">
+                <h3>Q1、忙碌工作一天后，今天你是几点下班？</h3>
+              </div>
+              <div class="select-main__option">
+                <label for="page1-1">
+                  <input type="radio" name="page1" value="1A" id="page1-1"> A、朝九晚五准点走人
+                </label>
+                <label for="page1-2">
+                  <input type="radio" name="page1" value="1B" id="page1-2"> B、9点打卡是常态
+                </label>
+                <label for="page1-3">
+                  <input type="radio" name="page1" value="1C" id="page1-3"> C、我爱凌晨的月色
+                </label>
+              </div>
+              <div class="next-page sw-next">
+                <button type="button" disabled>下一页</button>
+              </div>
             </div>
           </div>
+
         </div>
         <div data-hash="sw2" class="swiper-slide">
-          <div class="select-main">
-            <div class="select-main__title">
-              <h3>Q2、这时朋友电话约你，你们打算约在哪？</h3>
-            </div>
-            <div class="select-main__option">
-              <label for="page2-1">
-                <input type="radio" name="page2" value="2A" id="page2-1"> A、路边烧烤摊
-              </label>
-              <label for="page2-2">
-                <input type="radio" name="page2" value="2B" id="page2-2"> B、有格调的酒吧
-              </label>
-              <label for="page2-3">
-                <input type="radio" name="page2" value="2C" id="page2-3"> C、热闹的火锅店
-              </label>
-            </div>
-            <div class="next-page">
-              <button type="button" disabled>下一页</button>
+          <div class="page-bg"></div>
+          <div class="page-select">
+            <div class="select-main">
+              <div class="select-main__title">
+                <h3>Q2、这时朋友电话约你，你们打算约在哪？</h3>
+              </div>
+              <div class="select-main__option">
+                <label for="page2-1">
+                  <input type="radio" name="page2" value="2A" id="page2-1"> A、路边烧烤摊
+                </label>
+                <label for="page2-2">
+                  <input type="radio" name="page2" value="2B" id="page2-2"> B、有格调的酒吧
+                </label>
+                <label for="page2-3">
+                  <input type="radio" name="page2" value="2C" id="page2-3"> C、热闹的火锅店
+                </label>
+              </div>
+              <div class="next-page sw-next">
+                <button type="button" disabled>下一页</button>
+              </div>
             </div>
           </div>
         </div>
         <div data-hash="sw3" class="swiper-slide">
-          <div class="select-main">
-            <div class="select-main__title">
-              <h3>Q3、回家的路，略带疲惫的你突然想去...</h3>
-            </div>
-            <div class="select-main__option">
-              <label for="page3-1">
-                <input type="radio" name="page3" value="3A" id="page3-1"> A、享受运动解压
-              </label>
-              <label for="page3-2">
-                <input type="radio" name="page3" value="3B" id="page3-2"> B、酒吧喝一杯放松
-              </label>
-              <label for="page3-3">
-                <input type="radio" name="page3" value="3C" id="page3-3"> C、三五好友聚聚
-              </label>
-            </div>
-            <div class="next-page">
-              <button type="button" disabled>下一页</button>
+          <div class="page-bg"></div>
+          <div class="page-select">
+            <div class="select-main">
+              <div class="select-main__title">
+                <h3>Q3、回家的路，略带疲惫的你突然想去...</h3>
+              </div>
+              <div class="select-main__option">
+                <label for="page3-1">
+                  <input type="radio" name="page3" value="3A" id="page3-1"> A、享受运动解压
+                </label>
+                <label for="page3-2">
+                  <input type="radio" name="page3" value="3B" id="page3-2"> B、酒吧喝一杯放松
+                </label>
+                <label for="page3-3">
+                  <input type="radio" name="page3" value="3C" id="page3-3"> C、三五好友聚聚
+                </label>
+              </div>
+              <div class="next-page sw-next">
+                <button type="button" disabled>下一页</button>
+              </div>
             </div>
           </div>
         </div>
         <div data-hash="sw4" class="swiper-slide">
-          <div class="select-main">
-            <div class="select-main__title">
-              <h3>Q4、你们先走进一家酒吧，老板向你推荐一瓶新酒，你觉得他是什么形状？</h3>
-            </div>
-            <div class="select-main__option">
-              <label for="page4-1">
-                <input type="radio" name="page4" value="4A" id="page4-1"> A、圆柱状
-              </label>
-              <label for="page4-2">
-                <input type="radio" name="page4" value="4B" id="page4-2"> B、立方体
-              </label>
-              <label for="page4-3">
-                <input type="radio" name="page4" value="4C" id="page4-3"> C、异形状
-              </label>
-            </div>
-            <div class="next-page">
-              <button type="button" disabled>下一页</button>
+          <div class="page-bg"></div>
+          <div class="page-select">
+            <div class="select-main">
+              <div class="select-main__title">
+                <h3>Q4、你们先走进一家酒吧，老板向你推荐一瓶新酒，你觉得他是什么形状？</h3>
+              </div>
+              <div class="select-main__option">
+                <label for="page4-1">
+                  <input type="radio" name="page4" value="4A" id="page4-1"> A、圆柱状
+                </label>
+                <label for="page4-2">
+                  <input type="radio" name="page4" value="4B" id="page4-2"> B、立方体
+                </label>
+                <label for="page4-3">
+                  <input type="radio" name="page4" value="4C" id="page4-3"> C、异形状
+                </label>
+              </div>
+              <div class="next-page sw-next">
+                <button type="button" disabled>下一页</button>
+              </div>
             </div>
           </div>
         </div>
         <div data-hash="sw5" class="swiper-slide">
-          <div class="select-main">
-            <div class="select-main__title">
-              <h3>Q5、喝到微醺时来了条微醺，你觉得这是...</h3>
-            </div>
-            <div class="select-main__option">
-              <label for="page5-1">
-                <input type="radio" name="page5" value="5A" id="page5-1"> A、老板：“今天那个案子还要改改，明早9点发给客户”
-              </label>
-              <label for="page5-2">
-                <input type="radio" name="page5" value="5B" id="page5-2"> B、老妈：“1小时前说就到楼下，你这是到谁家楼下呢”
-              </label>
-              <label for="page5-3">
-                <input type="radio" name="page5" value="5C" id="page5-3"> C、前任：“我想你了”
-              </label>
-            </div>
-            <div class="next-page">
-              <button type="button" disabled>下一页</button>
+          <div class="page-bg"></div>
+          <div class="page-select">
+            <div class="select-main">
+              <div class="select-main__title">
+                <h3>Q5、喝到微醺时来了条微醺，你觉得这是...</h3>
+              </div>
+              <div class="select-main__option">
+                <label for="page5-1">
+                  <input type="radio" name="page5" value="5A" id="page5-1"> A、老板：“今天那个案子还要改改，明早9点发给客户”
+                </label>
+                <label for="page5-2">
+                  <input type="radio" name="page5" value="5B" id="page5-2"> B、老妈：“1小时前说就到楼下，你这是到谁家楼下呢”
+                </label>
+                <label for="page5-3">
+                  <input type="radio" name="page5" value="5C" id="page5-3"> C、前任：“我想你了”
+                </label>
+              </div>
+              <div class="next-page sw-next">
+                <button type="button" disabled>下一页</button>
+              </div>
             </div>
           </div>
         </div>
         <div data-hash="sw6" class="swiper-slide">
-          <div class="hand-animate"></div>
-          <div class="select-main">
-            <div class="select-main__title">
-              <h3>Q6、看完这条微信，你想来一杯多少度的酒？</h3>
-            </div>
-            <div class="select-main__option">
-              <label for="page6-1">
-                <input type="radio" name="page6" value="6A" id="page6-1"> A、还能hold住的20度以下
-              </label>
-              <label for="page6-2">
-                <input type="radio" name="page6" value="6B" id="page6-2"> B、挑战一下40度左右的
-              </label>
-              <label for="page6-3">
-                <input type="radio" name="page6" value="6C" id="page6-3"> C、能赶紧睡过去的50度以上
-              </label>
-            </div>
-            <div class="next-page">
-              <button type="button" disabled>下一页</button>
+          <div class="page-bg">
+            <div class="hand-animate"></div>
+          </div>
+          <div class="page-select">
+
+            <div class="select-main">
+              <div class="select-main__title">
+                <h3>Q6、看完这条微信，你想来一杯多少度的酒？</h3>
+              </div>
+              <div class="select-main__option">
+                <label for="page6-1">
+                  <input type="radio" name="page6" value="6A" id="page6-1"> A、还能hold住的20度以下
+                </label>
+                <label for="page6-2">
+                  <input type="radio" name="page6" value="6B" id="page6-2"> B、挑战一下40度左右的
+                </label>
+                <label for="page6-3">
+                  <input type="radio" name="page6" value="6C" id="page6-3"> C、能赶紧睡过去的50度以上
+                </label>
+              </div>
+              <div class="next-page sw-next">
+                <button type="button" disabled>下一页</button>
+              </div>
             </div>
           </div>
         </div>
         <div data-hash="sw7" class="swiper-slide">
-          <div class="select-main">
-            <div class="select-main__title">
-              <h3>Q7、此刻的你在朋友面前暴露了酒量...</h3>
-            </div>
-            <div class="select-main__option">
-              <label for="page7-1">
-                <input type="radio" name="page7" value="7A" id="page7-1"> A、一杯断片
-              </label>
-              <label for="page7-2">
-                <input type="radio" name="page7" value="7B" id="page7-2"> B、高手里的半斤八两
-              </label>
-              <label for="page7-3">
-                <input type="radio" name="page7" value="7C" id="page7-3"> C、根本停不下来的一直喝
-              </label>
-            </div>
-            <div class="next-page">
-              <button type="button" disabled>下一页</button>
+          <div class="page-bg"></div>
+          <div class="page-select">
+            <div class="select-main">
+              <div class="select-main__title">
+                <h3>Q7、此刻的你在朋友面前暴露了酒量...</h3>
+              </div>
+              <div class="select-main__option">
+                <label for="page7-1">
+                  <input type="radio" name="page7" value="7A" id="page7-1"> A、一杯断片
+                </label>
+                <label for="page7-2">
+                  <input type="radio" name="page7" value="7B" id="page7-2"> B、高手里的半斤八两
+                </label>
+                <label for="page7-3">
+                  <input type="radio" name="page7" value="7C" id="page7-3"> C、根本停不下来的一直喝
+                </label>
+              </div>
+              <div class="next-page sw-next">
+                <button type="button" disabled>下一页</button>
+              </div>
             </div>
           </div>
         </div>
         <div data-hash="sw8" class="swiper-slide">
-          <div class="select-main">
-            <div class="select-main__title">
-              <h3>Q8、这一天就要结束了，你选择哪一种睡姿进入梦里？</h3>
+          <div class="page-bg"></div>
+          <div class="page-select">
+            <div class="select-main">
+              <div class="select-main__title">
+                <h3>Q8、这一天就要结束了，你选择哪一种睡姿进入梦里？</h3>
+              </div>
+              <div class="select-main__option">
+                <label for="page8-1">
+                  <input type="radio" name="page8" value="8A" id="page8-1"> A、手扶枕头侧身睡
+                </label>
+                <label for="page8-2">
+                  <input type="radio" name="page8" value="8B" id="page8-2"> B、如士兵一般平躺睡
+                </label>
+                <label for="page8-3">
+                  <input type="radio" name="page8" value="8C" id="page8-3"> C、像婴儿那样趴着睡
+                </label>
+              </div>
+              <div class="next-page sw-next" id="complete-button">
+                <button type="submit" disabled>生成我的结果</button>
+              </div>
             </div>
-            <div class="select-main__option">
-              <label for="page8-1">
-                <input type="radio" name="page8" value="8A" id="page8-1"> A、手扶枕头侧身睡
-              </label>
-              <label for="page8-2">
-                <input type="radio" name="page8" value="8B" id="page8-2"> B、如士兵一般平躺睡
-              </label>
-              <label for="page8-3">
-                <input type="radio" name="page8" value="8C" id="page8-3"> C、像婴儿那样趴着睡
-              </label>
-            </div>
-            <div class="next-page" id="complete-button">
-              <button type="submit" disabled>生成我的结果</button>
-            </div>
+          </div>
+        </div>
+        <div data-hash="sw9" class="swiper-slide results">
+          <div class="results-top">
+            
+          </div>
+          <div class="results-bottom">
+
           </div>
         </div>
       </div>
