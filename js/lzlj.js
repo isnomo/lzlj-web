@@ -60,10 +60,15 @@
     }
   ]
 
+  // 判断是否旋转
   if (winWidth > winHeight) {
     $('.rotate-hint').css({ 'display': 'block' })
   } else {
     $('.rotate-hint').css({ 'display': 'none' })
+  }
+  // 兼容iphoneX
+  if(winHeight / 2 > winWidth){
+    $('.lzlj-main .bg-wrapper .page-select').css({ 'padding': '0 5% 10%' })
   }
 
   // init
