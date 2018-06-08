@@ -89,12 +89,14 @@ html, body, form {
       background-size: 100%;
       position: absolute;
       top: 0;
+      left: 0;
     }
     .page-select{
       width: 100%;
       height: auto;
       position: absolute;
       bottom: 0;
+      left: 0;
       padding: 0 5% 4%;
       .select-main{
         .select-main__title{
