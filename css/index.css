@@ -198,6 +198,17 @@ html, body, form {
     }
   }
 }
+.last-btn{
+  background-image: url('../img/button.png');
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  z-index: -2;
+  opacity: 0;
+}
 // 结果页面
 .results{
   background: #c7d8ef;
