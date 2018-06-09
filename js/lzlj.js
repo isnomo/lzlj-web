@@ -80,7 +80,7 @@
       // prevEl: '.swiper-button-prev',
     },
     speed: 500,
-    initialSlide: 9,
+    // initialSlide: 9,
     on: {
       slideChange: function () {
         if (this.activeIndex == 5) {

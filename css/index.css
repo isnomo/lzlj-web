@@ -295,7 +295,8 @@ html, body, form {
     height: 42%;
     background: #fff;
     position: relative;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
+    margin-top: 3%;
     .results-bottom__img{
       background-image: url('../img/bg/r2.png');
       background-repeat: no-repeat;
@@ -306,7 +307,7 @@ html, body, form {
     }
     .results-bottom__title{
       h3{
-        font-size: 18px;
+        font-size: 17px;
         font-weight: bold;
         color: #aa6d5b;
       }
@@ -317,7 +318,7 @@ html, body, form {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      bottom: -10%;
+      bottom: -12%;
       div{
         font-size: 13px;
         background: #fff;
