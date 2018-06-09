@@ -13,7 +13,7 @@
     {
       'page4': '4C',
       'page8': '8A',
-      'title': '话痨，滔滔不绝，夸夸其谈，江湖传说骂得过流氓',
+      'title': '话痨，夸夸其谈，江湖传说骂得过流氓',
       'tags': ['拥有完美的理性思维', '天生的演说家', '文艺', '你的爱情热切而强烈']
     },
     {
@@ -76,10 +76,11 @@
   // init
   var swiper = new Swiper('.swiper-container', {
     navigation: {
-      nextEl: '.sw-next',
+      nextEl: '.select-main .sw-next',
       // prevEl: '.swiper-button-prev',
     },
     speed: 500,
+    initialSlide: 9,
     on: {
       slideChange: function () {
         if (this.activeIndex == 5) {
@@ -99,7 +100,7 @@
   $('input[type=radio]').on('click', function (event) {
     let pageNum = $(this).attr('name')
     let thisBtn = $(this).parents('.select-main__option').next()
-    thisBtn.find('button').attr('disabled', false)
+    thisBtn.find('button').attr('disabled', false).addClass('isTrue')
   })
 
   $('#complete-button').on('click', function (event) {

@@ -99,6 +99,7 @@ html, body, form {
       left: 0;
       padding: 0 5% 4%;
       .select-main{
+        position: relative;
         .select-main__title{
           text-align: left;
           border: 3px solid #4b2c20;
@@ -118,6 +119,7 @@ html, body, form {
           border-radius: 5px;
           padding: 10px;
           background: #fff;
+          position: relative;
           label{
             display: block;
             font-size: 14px;
@@ -140,9 +142,24 @@ html, body, form {
         }
         .next-page{
           text-align: right;
-          float: right;
-          font-size: 14px;
-          margin-top: 5px;
+          position: absolute;
+          right: 10px;
+          bottom: 4px;
+          z-index: 3;
+          button{
+            width: 32px;
+            height: 32px;
+            border: 0;
+            background-color: transparent;
+            background-image: url('../img/button0.png');
+            background-size: 32px;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: all 1s ease-out;
+            &.isTrue{
+              background-image: url('../img/button.png');
+            }
+          }
         }
       }
     }
@@ -179,24 +196,139 @@ html, body, form {
     .swiper-slide:nth-child(8) .page-bg{
       background-image: url('http://cdnvideo.airproce.com/bg/8.png');
     }
-    .swiper-slide:nth-child(9){
-      background-image: url('http://cdnvideo.airproce.com/bg/9.png');
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: 100%;
-    }
   }
 }
 // 结果页面
-// .result{
-//   width: 100%;
-//   height: 100%;
-//   background-repeat: no-repeat;
-//   background-position: top;
-//   background-size: 95%;
-//   background-image: url('http://cdnvideo.airproce.com/bg/9.png');
-//   background-color: #ceddf1;
-// }
+.results{
+  background: #c7d8ef;
+  padding: 4% 5%;
+  width: 100%;
+  height: 100%;
+  .results-top{
+    background-image: url('../img/bg/r1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 100%;
+    height: 48%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .tags-left{
+      width: 33%;
+      height: 100%;
+      margin-left: -3%;
+      // background: #4b2c20;
+      .tags-item{
+        background: #fff;
+        border-radius: 5px;
+        font-size: 14px;
+        padding: 5% 7%;
+        letter-spacing: 1px;
+        color: #643;
+        position: relative;
+        font-weight: bold;
+        &:nth-child(1){
+          margin-top: 35%;
+        }
+        &:nth-child(2){
+          margin-top: 55%;
+        }
+        &::after{
+          content: '';
+          display: block;
+          width: 30px;
+          height: 30px;
+          background-image: url('../img/bg/role.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 30px;
+          position: absolute;
+          right: 3px;
+          bottom: -18px;
+          transform: rotateY(180deg);
+        }
+      }
+    }
+    .tags-mid{
+      width: 20%;
+      height: 100%;
+    }
+    .tags-right{
+      width: 30%;
+      height: 100%;
+      margin-right: -3%;
+      // background: #aa6d5b;
+      .tags-item{
+        background: #fff;
+        border-radius: 5px;
+        font-size: 14px;
+        padding: 5% 7%;
+        letter-spacing: 1px;
+        color: #643;
+        position: relative;
+        font-weight: bold;
+        &:nth-child(1){
+          margin-top: 25%;
+        }
+        &:nth-child(2){
+          margin-top: 45%;
+        }
+        &::after{
+          content: '';
+          display: block;
+          width: 30px;
+          height: 30px;
+          background-image: url('../img/bg/role.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 30px;
+          position: absolute;
+          left: 3px;
+          bottom: -18px;
+        }
+      }
+    }
+  }
+  .results-bottom{
+    width: 100%;
+    height: 42%;
+    background: #fff;
+    position: relative;
+    padding-bottom: 3%;
+    .results-bottom__img{
+      background-image: url('../img/bg/r2.png');
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: 100%;
+      width: 100%;
+      height: 85%;
+    }
+    .results-bottom__title{
+      h3{
+        font-size: 18px;
+        font-weight: bold;
+        color: #aa6d5b;
+      }
+    }
+    .results-bottom__btn{
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      bottom: -10%;
+      div{
+        font-size: 13px;
+        background: #fff;
+        border: 3px solid #d79439;
+        border-radius: 5px;
+        padding: 2% 3%;
+        color: #643;
+      }
+    }
+  }
+}
 
 
 
