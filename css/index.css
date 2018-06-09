@@ -303,7 +303,7 @@ html, body, form {
   }
   .results-bottom{
     width: 100%;
-    height: 42%;
+    height: 43%;
     background: #fff;
     position: relative;
     padding-bottom: 2%;
@@ -314,7 +314,7 @@ html, body, form {
       background-position: top;
       background-size: 100%;
       width: 100%;
-      height: 83%;
+      height: 85%;
     }
     .results-bottom__title{
       h3{
