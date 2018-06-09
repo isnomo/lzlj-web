@@ -97,7 +97,7 @@ html, body, form {
       position: absolute;
       bottom: 0;
       left: 0;
-      padding: 0 5% 10%;
+      padding: 0 5% 8%;
       .select-main{
         position: relative;
         .select-main__title{
