@@ -250,14 +250,13 @@ html, body, form {
           display: block;
           width: 30px;
           height: 30px;
-          background-image: url('../img/bg/role.png');
+          background-image: url('../img/bg/role-left.png');
           background-repeat: no-repeat;
           background-position: center;
           background-size: 30px;
           position: absolute;
           right: 3px;
           bottom: -18px;
-          transform: rotateY(180deg);
         }
       }
     }
@@ -290,7 +289,7 @@ html, body, form {
           display: block;
           width: 30px;
           height: 30px;
-          background-image: url('../img/bg/role.png');
+          background-image: url('../img/bg/role-right.png');
           background-repeat: no-repeat;
           background-position: center;
           background-size: 30px;
