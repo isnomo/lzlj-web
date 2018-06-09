@@ -154,7 +154,7 @@ html, body, form {
             background-size: 32px;
             background-repeat: no-repeat;
             background-position: center;
-            transition: all 1s ease-out;
+            transition: all .3s ease-out;
             padding: 0;
             &.isTrue{
               background-image: url('../img/button.png');
