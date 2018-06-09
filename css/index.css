@@ -97,7 +97,7 @@ html, body, form {
       position: absolute;
       bottom: 0;
       left: 0;
-      padding: 0 5% 4%;
+      padding: 0 5% 10%;
       .select-main{
         position: relative;
         .select-main__title{
@@ -141,7 +141,6 @@ html, body, form {
           }
         }
         .next-page{
-          text-align: right;
           position: absolute;
           right: 10px;
           bottom: 4px;
@@ -156,6 +155,7 @@ html, body, form {
             background-repeat: no-repeat;
             background-position: center;
             transition: all 1s ease-out;
+            padding: 0;
             &.isTrue{
               background-image: url('../img/button.png');
             }

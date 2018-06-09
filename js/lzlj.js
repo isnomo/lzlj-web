@@ -69,7 +69,7 @@
   // alert(winWidth + 'x' + winHeight)
   // 兼容iphoneX
   if(winHeight / winWidth > 1.8){
-    $('.lzlj-main .bg-wrapper .page-select').css({ 'padding': '0 5% 10%' })
+    $('.lzlj-main .bg-wrapper .page-select').css({ 'padding': '0 5% 12%' })
     // alert('长手机')
   }
 
