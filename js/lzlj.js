@@ -80,13 +80,28 @@
       // prevEl: '.swiper-button-prev',
     },
     speed: 500,
-    // initialSlide: 9,
     on: {
       slideChange: function () {
         if (this.activeIndex == 5) {
           setTimeout(() => {
             $('.hand-animate').addClass('active')
           }, 300)
+        }
+        if (this.activeIndex == 8) {
+          setTimeout(() => {
+            $('.results .results-top .tags-left').children('div:first-child').addClass('show')
+            $('.results .results-top .tags-left').children('div:last-child').addClass('show')
+            $('.results .results-top .tags-right').children('div:first-child').addClass('show')
+            $('.results .results-top .tags-right').children('div:last-child').addClass('show')
+          }, 300)
+          setTimeout(() => {
+            $('.results .results-bottom .results-bottom__btn').addClass('show')
+          }, 800)
+          $('#click-img').click(function(){
+            html2canvas(document.querySelector("#download-img")).then(canvas => {
+              document.querySelector("#show-img").appendChild(canvas)
+            })
+          })
         }
       },
     },
@@ -120,11 +135,15 @@
       }
     })
     console.log(resultsData)
-    // location.href = 'result.html'
     for(let i = 0; i < titleJson.length; i++){
       let itemTitle = titleJson[i]
       if(itemTitle.page4 == page4Val && itemTitle.page8 == page8Val){
         console.log(itemTitle)
+        $('.results .results-top .tags-left').children('div:first-child').html(itemTitle.tags[0])
+        $('.results .results-top .tags-left').children('div:last-child').html(itemTitle.tags[2])
+        $('.results .results-top .tags-right').children('div:first-child').html(itemTitle.tags[1])
+        $('.results .results-top .tags-right').children('div:last-child').html(itemTitle.tags[3])
+        $('.results .results-bottom .results-bottom__title h3').html(itemTitle.title)
       }
     }
   })
@@ -134,6 +153,10 @@
 
   $(window).load(() => {
     $('.loading').fadeOut(300)
+    let imgHeight = $('.results .results-bottom .results-bottom__img').width() / 1.65
+    let titleLine = $('.results .results-bottom').height() - imgHeight
+    $('.results .results-bottom .results-bottom__img').height(imgHeight)
+    $('.results .results-bottom .results-bottom__title h3').css({'line-height' : titleLine + 'px'})
   })
 
   $(window).scroll(() => {
