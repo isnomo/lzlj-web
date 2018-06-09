@@ -154,9 +154,7 @@
   $(window).load(() => {
     $('.loading').fadeOut(300)
     let imgHeight = $('.results .results-bottom .results-bottom__img').width() / 1.65
-    let titleLine = $('.results .results-bottom').height() - imgHeight
     $('.results .results-bottom .results-bottom__img').height(imgHeight)
-    $('.results .results-bottom .results-bottom__title h3').css({'line-height' : titleLine + 'px'})
   })
 
   $(window).scroll(() => {

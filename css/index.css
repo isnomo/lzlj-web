@@ -340,6 +340,7 @@ html, body, form {
     }
     .results-bottom__title{
       background: #fff;
+      padding: 4% 0 5%;
       h3{
         font-size: 18px;
         font-weight: bold;
@@ -353,7 +354,7 @@ html, body, form {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      bottom: -8%;
+      bottom: -10%;
       transform: translateY(30px);
       opacity: 0;
       transition: all 1s ease-out;
