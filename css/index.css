@@ -217,6 +217,24 @@ html, body, form {
   width: 100%;
   height: 100%;
   position: relative;
+  .info{
+    font-size: 13px;
+    background: #668cbe;
+    border-radius: 5px;
+    padding: 2% 5%;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-30px);
+    opacity: 0;
+    z-index: 50;
+    font-weight: bold;
+    transition: all 1s ease-out;
+    &.show{
+      transform: translate(-50%,0);
+      opacity: 1;
+    }
+  }
   #show-img{
     position: absolute;
     width: 100%;
@@ -263,20 +281,20 @@ html, body, form {
         &:nth-child(2){
           margin-top: 55%;
         }
-        &::after{
-          content: '';
-          display: block;
-          width: 30px;
-          height: 11px;
-          background-image: url('../img/bg/role-left.png');
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: 30px;
-          position: absolute;
-          right: 3px;
-          bottom: -9px;
-          z-index: 1;
-        }
+        // &::after{
+        //   content: '';
+        //   display: block;
+        //   width: 30px;
+        //   height: 11px;
+        //   background-image: url('../img/bg/role-left.png');
+        //   background-repeat: no-repeat;
+        //   background-position: center;
+        //   background-size: 30px;
+        //   position: absolute;
+        //   right: 3px;
+        //   bottom: -9px;
+        //   z-index: 1;
+        // }
       }
     }
     .tags-mid{
@@ -311,20 +329,20 @@ html, body, form {
         &:nth-child(2){
           margin-top: 45%;
         }
-        &::after{
-          content: '';
-          display: block;
-          width: 30px;
-          height: 11px;
-          background-image: url('../img/bg/role-right.png');
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: 30px;
-          position: absolute;
-          left: 3px;
-          bottom: -9px;
-          z-index: 1;
-        }
+        // &::after{
+        //   content: '';
+        //   display: block;
+        //   width: 30px;
+        //   height: 11px;
+        //   background-image: url('../img/bg/role-right.png');
+        //   background-repeat: no-repeat;
+        //   background-position: center;
+        //   background-size: 30px;
+        //   position: absolute;
+        //   left: 3px;
+        //   bottom: -9px;
+        //   z-index: 1;
+        // }
       }
     }
   }
@@ -337,7 +355,7 @@ html, body, form {
     .results-bottom__img{
       background-image: url('../img/bg/r2.png');
       background-repeat: no-repeat;
-      background-position: top;
+      background-position: center -2px;
       background-size: 100%;
       width: 100%;
       height: 85%;
@@ -375,6 +393,10 @@ html, body, form {
         padding: 2% 3%;
         color: #643;
         width: 35%;
+        a{
+          color: #643;
+          font-size: 13px;
+        }
       }
     }
   }

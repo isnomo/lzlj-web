@@ -96,12 +96,15 @@
           }, 300)
           setTimeout(() => {
             $('.results .results-bottom .results-bottom__btn').addClass('show')
-          }, 800)
+          }, 600)
           $('#click-img').click(function () {
-            // html2canvas(document.querySelector("#download-img")).then(canvas => {
-            //   document.querySelector("#show-canvas").appendChild(canvas)
-            // })
             convert2canvas()
+            setTimeout(() => {
+              $('.results .info').addClass('show')
+            }, 500)
+            setTimeout(() => {
+              $('.results .info').removeClass('show')
+            }, 2500)
           })
         }
       },
@@ -135,7 +138,6 @@
         }
       }
     })
-    console.log(resultsData)
     for (let i = 0; i < titleJson.length; i++) {
       let itemTitle = titleJson[i]
       if (itemTitle.page4 == page4Val && itemTitle.page8 == page8Val) {
@@ -147,6 +149,19 @@
         $('.results .results-bottom .results-bottom__title h3').html(itemTitle.title)
       }
     }
+    console.log(resultsData)
+    $.ajax({
+      url: 'http://test.bossyi.cn/api/answer',
+      type: 'POST',
+      data: { 'answer': resultsData },
+      dataType: 'JSON',
+      success: function (res) {
+        console.log(res)
+      },
+      error: function (XMLHttpRequest, textStatus, errorThrown) {
+        console.log(textStatus);
+      }
+    })
   })
 
 
@@ -155,7 +170,7 @@
   $(window).load(() => {
     $('.loading').fadeOut(300)
     let imgHeight = $('.results .results-bottom .results-bottom__img').width() / 1.65
-    $('.results .results-bottom .results-bottom__img').height(imgHeight)
+    $('.results .results-bottom .results-bottom__img').height(imgHeight - 4)
   })
 
   $(window).scroll(() => {
