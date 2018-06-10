@@ -96,7 +96,7 @@
           }, 300)
           setTimeout(() => {
             $('.results .results-bottom .results-bottom__btn').addClass('show')
-          }, 600)
+          }, 800)
           $('#click-img').click(function () {
             convert2canvas()
             setTimeout(() => {
