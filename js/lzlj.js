@@ -59,6 +59,10 @@
       'tags': ['拥有极强的应变能力', '天生的时尚达人', '魅力', '你的爱情能抚平伤痛']
     }
   ]
+  // let linkUrl = window.location.href
+  // let nowDate = new Date().getTime()
+  // console.log(nowDate)
+  // window.location = linkUrl + '?t=' + nowDate
   // 判断是否旋转
   if (winWidth > winHeight) {
     $('.rotate-hint').css({ 'display': 'block' })
@@ -70,6 +74,8 @@
   // 兼容iphoneX
   if (winHeight / winWidth > 1.8) {
     $('.lzlj-main .bg-wrapper .page-select').css({ 'padding': '0 5% 20%' })
+    $('.results .results-bottom .results-bottom__btn').css({ 'bottom': '-10%' })
+    
     // alert('长手机')
   }
 
