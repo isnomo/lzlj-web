@@ -150,18 +150,18 @@
       }
     }
     console.log(resultsData)
-    $.ajax({
-      url: 'http://test.bossyi.cn/api/answer',
-      type: 'POST',
-      data: { 'answer': resultsData },
-      dataType: 'JSON',
-      success: function (res) {
-        console.log(res)
-      },
-      error: function (XMLHttpRequest, textStatus, errorThrown) {
-        console.log(textStatus);
-      }
-    })
+    // $.ajax({
+    //   url: 'http://test.bossyi.cn/api/answer',
+    //   type: 'POST',
+    //   data: { 'answer': resultsData },
+    //   dataType: 'JSON',
+    //   success: function (res) {
+    //     console.log(res)
+    //   },
+    //   error: function (XMLHttpRequest, textStatus, errorThrown) {
+    //     console.log(textStatus);
+    //   }
+    // })
   })
 
 
