@@ -252,6 +252,7 @@ html, body, form {
         transform: translateX(-30px);
         opacity: 0;
         transition: all 1s ease-out;
+        z-index: 3;
         &.show{
           transform: translateX(0);
           opacity: 1;
@@ -266,14 +267,15 @@ html, body, form {
           content: '';
           display: block;
           width: 30px;
-          height: 30px;
+          height: 11px;
           background-image: url('../img/bg/role-left.png');
           background-repeat: no-repeat;
           background-position: center;
           background-size: 30px;
           position: absolute;
           right: 3px;
-          bottom: -18px;
+          bottom: -9px;
+          z-index: 1;
         }
       }
     }
@@ -298,6 +300,7 @@ html, body, form {
         transform: translateX(30px);
         opacity: 0;
         transition: all 1s ease-out;
+        z-index: 3;
         &.show{
           transform: translateX(0);
           opacity: 1;
@@ -312,14 +315,15 @@ html, body, form {
           content: '';
           display: block;
           width: 30px;
-          height: 30px;
+          height: 11px;
           background-image: url('../img/bg/role-right.png');
           background-repeat: no-repeat;
           background-position: center;
           background-size: 30px;
           position: absolute;
           left: 3px;
-          bottom: -18px;
+          bottom: -9px;
+          z-index: 1;
         }
       }
     }
@@ -354,7 +358,7 @@ html, body, form {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      bottom: -10%;
+      bottom: -13%;
       transform: translateY(30px);
       opacity: 0;
       transition: all 1s ease-out;
@@ -376,6 +380,12 @@ html, body, form {
   }
 }
 
+#show-canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
 
 
 
