@@ -156,6 +156,7 @@
       }
     }
     console.log(resultsData)
+    // JSON.stringify(resultsData)
     // $.ajax({
     //   url: 'http://test.bossyi.cn/api/answer',
     //   type: 'POST',
