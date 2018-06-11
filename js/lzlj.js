@@ -82,23 +82,23 @@
   // init
   var swiper = new Swiper('.swiper-container', {
     navigation: {
-      nextEl: '.select-main .sw-next',
+      nextEl: '.sw-next',
       // prevEl: '.swiper-button-prev',
     },
     speed: 500,
     on: {
       slideChange: function () {
-        if (this.activeIndex == 5) {
+        if (this.activeIndex == 6) {
           setTimeout(() => {
             $('.hand-animate').addClass('active')
           }, 300)
         }
-        if (this.activeIndex == 8) {
+        if (this.activeIndex == 9) {
           setTimeout(() => {
             $('.results .results-top .tags-left').children('div:first-child').addClass('show')
             $('.results .results-top .tags-left').children('div:last-child').addClass('show')
             $('.results .results-top .tags-right').children('div:first-child').addClass('show')
-            $('.results .results-top .tags-right').children('div:last-child').addClass('show')
+            $('.results .results-top .tags-right').children('div:nth-child(2)').addClass('show')
           }, 300)
           setTimeout(() => {
             $('.results .results-bottom .results-bottom__btn').addClass('show')
@@ -115,6 +115,7 @@
         }
       },
     },
+    // initialSlide :10,
     allowTouchMove: false,
     // hashNavigation: {
     //   watchState: true,
@@ -151,7 +152,7 @@
         $('.results .results-top .tags-left').children('div:first-child').html(itemTitle.tags[0])
         $('.results .results-top .tags-left').children('div:last-child').html(itemTitle.tags[2])
         $('.results .results-top .tags-right').children('div:first-child').html(itemTitle.tags[1])
-        $('.results .results-top .tags-right').children('div:last-child').html(itemTitle.tags[3])
+        $('.results .results-top .tags-right').children('div:nth-child(2)').html(itemTitle.tags[3])
         $('.results .results-bottom .results-bottom__title h3').html(itemTitle.title)
       }
     }
@@ -176,7 +177,7 @@
 
   $(window).load(() => {
     $('.loading').fadeOut(300)
-    let imgHeight = $('.results .results-bottom .results-bottom__img').width() / 1.65
+    let imgHeight = $('.results .results-bottom .results-bottom__img').width() / 1.7
     $('.results .results-bottom .results-bottom__img').height(imgHeight - 4)
   })
 
