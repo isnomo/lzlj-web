@@ -215,7 +215,7 @@ html, body, form {
 // 结果页面
 .results{
   background: #c9daf0;
-  padding: 4% 8%;
+  padding: 4% 7%;
   width: 100%;
   height: 100%;
   position: relative;
@@ -246,7 +246,7 @@ html, body, form {
     top: 0;
   }
   .results-top{
-    background-image: url('../img/bg/r1.png');
+    background-image: url('http://cdnvideo.airproce.com/bg/r1.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -330,7 +330,7 @@ html, body, form {
           margin-top: 25%;
         }
         &:nth-child(2){
-          margin-top: 35%;
+          margin-top: 40%;
         }
         // &::after{
         //   content: '';
@@ -355,11 +355,11 @@ html, body, form {
         background-position: center;
         background-repeat: no-repeat;
         line-height: 39px;
-        font-size: 16px;
+        font-size: 18px;
         padding: 0 0 0 30px;
         letter-spacing: 1px;
-        color: #4a6e9a;
-        font-weight: bold;
+        color: #254469;
+        font-weight: 900;
         text-align: left;
         position: absolute;
         bottom: 30px;
@@ -374,7 +374,7 @@ html, body, form {
     padding-bottom: 2%;
     margin-top: 2%;
     .results-bottom__img{
-      background-image: url('../img/bg/r2.png');
+      background-image: url('http://cdnvideo.airproce.com/bg/r2.png');
       background-repeat: no-repeat;
       background-position: center -2px;
       background-size: 100%;
@@ -388,15 +388,25 @@ html, body, form {
         background-position: center;
         background-repeat: no-repeat;
         line-height: 39px;
-        font-size: 16px;
+        font-size: 18px;
         padding: 0 0 0 30px;
         letter-spacing: 1px;
-        color:#4a6e9a;
-        font-weight: bold;
+        color: #254469;
+        font-weight: 900;
         text-align: left;
         position: absolute;
         top: 40px;
         right: -3%;
+      }
+      .qcode{
+        width: 60px;
+        text-align: left;
+        position: absolute;
+        top: 100px;
+        right: 20px;
+        img{
+          width: 100%;
+        }
       }
     }
     .results-bottom__title{
@@ -415,7 +425,8 @@ html, body, form {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      bottom: -18%;
+      bottom: -15%;
+      margin-top: 5px;
       transform: translateY(30px);
       opacity: 0;
       transition: all .7s ease-out;
@@ -451,13 +462,22 @@ html, body, form {
     width: 100%;
     height: 100%;
     border: 3px solid #fff;
-    h3{
-      font-size: 24px;
-      color: #fff;
-      margin: 10% 0 5%;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-shadow: 3px 3px 0 rgba(0,0,0,.6);
+    .page-cover-title{
+      background: #fff;
+      margin: 6% auto 5%;
+      width: 80%;
+      position: relative;
+      transform: translateX(-5px);
+      h3{
+        position: relative;
+        font-size: 24px;
+        color: #fff;
+        background: #db9a34;
+        padding: 5%;
+        font-weight: 600;
+        letter-spacing: 2px;
+        transform: translate(5px,5px);
+      }
     }
     .page-cover-img{
       width: 70%;
@@ -473,6 +493,7 @@ html, body, form {
         padding: 3px 20px;
         display: inline-block;
         position: relative;
+        letter-spacing: 1px; 
         &::before{
           content: '';
           position: absolute;
@@ -498,7 +519,7 @@ html, body, form {
       }
     }
     .page-cover-btn{
-      margin-top: 40px;
+      margin-top: 10%;
       button{
         width: 120px;
         height: 44px;
@@ -630,6 +651,23 @@ html, body, form {
   }
   .results .results-bottom .results-bottom__btn{
     bottom: -20%;
+  }
+  .results .results-bottom .results-bottom__img .page-title{
+    width: 100px;
+    background-size: 100px;
+    padding: 0 0 0 20px;
+    top: 30px;
+  }
+  .results .results-top .tags-right .page-title{
+    width: 100px;
+    background-size: 100px;
+    padding: 0 0 0 20px;
+    bottom: 20px;
+  }
+  .results .results-bottom .results-bottom__img .qcode {
+    width: 50px;
+    top: 80px;
+    right: 15px;
   }
 }
 

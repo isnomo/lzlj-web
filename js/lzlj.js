@@ -115,7 +115,7 @@
         }
       },
     },
-    // initialSlide :10,
+    initialSlide :10,
     allowTouchMove: false,
     // hashNavigation: {
     //   watchState: true,
@@ -148,7 +148,6 @@
     for (let i = 0; i < titleJson.length; i++) {
       let itemTitle = titleJson[i]
       if (itemTitle.page4 == page4Val && itemTitle.page8 == page8Val) {
-        console.log(itemTitle)
         $('.results .results-top .tags-left').children('div:first-child').html(itemTitle.tags[0])
         $('.results .results-top .tags-left').children('div:last-child').html(itemTitle.tags[2])
         $('.results .results-top .tags-right').children('div:first-child').html(itemTitle.tags[1])
@@ -158,18 +157,19 @@
     }
     console.log(resultsData)
     // JSON.stringify(resultsData)
-    // $.ajax({
-    //   url: 'http://test.bossyi.cn/api/answer',
-    //   type: 'POST',
-    //   data: { 'answer': resultsData },
-    //   dataType: 'JSON',
-    //   success: function (res) {
-    //     console.log(res)
-    //   },
-    //   error: function (XMLHttpRequest, textStatus, errorThrown) {
-    //     console.log(textStatus);
-    //   }
-    // })
+    let resData =  resultsData.toString()
+    $.ajax({
+      url: 'http://test.bossyi.cn/api/answer',
+      type: 'POST',
+      data: { 'answer': resData },
+      dataType: 'JSON',
+      success: function (res) {
+        console.log(res)
+      },
+      error: function (XMLHttpRequest, textStatus, errorThrown) {
+        console.log(textStatus);
+      }
+    })
   })
 
 
