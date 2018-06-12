@@ -366,6 +366,25 @@ html, body, form {
         bottom: 25px;
         right: 0;
       }
+      
+    }
+  }
+  .results-mid{
+    position: absolute;
+    .logo-div{
+      width: 120px;
+      // position: absolute;
+      bottom: 80px;
+      right: 0;
+      background: #fff;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 5px;
+      border-radius: 5px;
+      img{
+        width: 30%;
+      }
     }
   }
   .results-bottom{
