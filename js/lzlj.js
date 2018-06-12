@@ -115,7 +115,7 @@
         }
       },
     },
-    initialSlide :10,
+    // initialSlide :10,
     allowTouchMove: false,
     // hashNavigation: {
     //   watchState: true,
