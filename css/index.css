@@ -659,12 +659,14 @@ html, body, form {
     background-size: 100px;
     padding: 0 0 0 20px;
     top: 30px;
+    font-size: 16px;
   }
   .results .results-top .tags-right .page-title{
     width: 100px;
     background-size: 100px;
     padding: 0 0 0 20px;
     bottom: 20px;
+    font-size: 16px;
   }
   .results .results-bottom .results-bottom__img .qcode {
     width: 50px;
