@@ -244,6 +244,7 @@ html, body, form {
     z-index: 20;
     left: 0;
     top: 0;
+    opacity: 0;
   }
   .results-top{
     width: 100%;
@@ -262,7 +263,7 @@ html, body, form {
         background: #fff;
         border-radius: 5px;
         font-size: 14px;
-        padding: 5% 7%;
+        padding: 8px 12px;
         letter-spacing: 1px;
         color: #643;
         position: relative;
@@ -313,7 +314,7 @@ html, body, form {
         background: #fff;
         border-radius: 5px;
         font-size: 14px;
-        padding: 5% 7%;
+        padding: 8px 12px;
         letter-spacing: 1px;
         color: #643;
         position: relative;

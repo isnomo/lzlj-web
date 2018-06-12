@@ -78,6 +78,7 @@
     $('.results .results-mid').css({ 'margin-top': '2%' })
     $('.results .results-bottom').css({ 'margin-top': '10%' })
     $('.results .results-bottom .results-bottom__btn').css({ 'margin-top': '10px' })
+    $('.page-cover .page-cover-main .page-cover-title').css({ 'margin': '10% auto' })
     
     // alert('长手机')
   }
