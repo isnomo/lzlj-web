@@ -256,14 +256,14 @@ html, body, form {
     .tags-left{
       width: 33%;
       height: 100%;
-      margin-left: -3%;
+      margin-left: -2%;
       z-index: 2;
       // background: #4b2c20;
       .tags-item{
         background: #fff;
         border-radius: 5px;
-        font-size: 14px;
-        padding: 8px 12px;
+        font-size: 15px;
+        padding: 6px 10px;
         letter-spacing: 1px;
         color: #643;
         position: relative;
@@ -313,8 +313,8 @@ html, body, form {
       .tags-item{
         background: #fff;
         border-radius: 5px;
-        font-size: 14px;
-        padding: 8px 12px;
+        font-size: 15px;
+        padding: 6px 10px;
         letter-spacing: 1px;
         color: #643;
         position: relative;
@@ -442,7 +442,7 @@ html, body, form {
     }
     .results-bottom__title{
       background: #fff;
-      padding: 4% 0 5%;
+      padding: 2% 0 3%;
       h3{
         font-size: 16px;
         font-weight: bold;
@@ -496,7 +496,7 @@ html, body, form {
     border: 3px solid #fff;
     .page-cover-title{
       background: #fff;
-      margin: 6% auto 5%;
+      margin: 5% auto;
       width: 80%;
       position: relative;
       transform: translateX(-5px);
