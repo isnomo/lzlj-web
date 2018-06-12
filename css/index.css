@@ -371,17 +371,18 @@ html, body, form {
   }
   .results-mid{
     position: absolute;
+    margin-top: 2%;
     .logo-div{
-      width: 120px;
+      width: 150px;
       // position: absolute;
-      bottom: 80px;
-      right: 0;
-      background: #fff;
+      // bottom: 80px;
+      // right: 0;
+      // background: #fff;
       display: flex;
       justify-content: space-around;
       align-items: center;
-      padding: 10px 5px;
-      border-radius: 5px;
+      // padding: 10px 5px;
+      // border-radius: 5px;
       img{
         width: 30%;
       }
@@ -392,7 +393,7 @@ html, body, form {
     height: 43%;
     position: relative;
     padding-bottom: 2%;
-    margin-top: 2%;
+    margin-top: 8%;
     .results-bottom__img{
       background-image: url('http://cdnvideo.airproce.com/bg/r2.png');
       background-repeat: no-repeat;
@@ -446,7 +447,8 @@ html, body, form {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      bottom: -15%;
+      // bottom: -15%;
+      bottom: auto;
       margin-top: 5px;
       transform: translateY(30px);
       opacity: 0;
@@ -661,17 +663,17 @@ html, body, form {
     font-size: 12px;
   }
   .results .results-bottom .results-bottom__title h3{
-    font-size: 15px;
+    font-size: 14px;
   }
   .results .results-bottom .results-bottom__btn div{
     font-size: 12px;
     width: 40%;
   }
   .results .results-bottom{
-    margin-top: 0;
+    margin-top: 6%;
   }
   .results .results-bottom .results-bottom__btn{
-    bottom: -20%;
+    margin-top: -5px;
   }
   .results .results-bottom .results-bottom__img .page-title{
     width: 100px;
@@ -702,6 +704,12 @@ html, body, form {
     margin: 10px 0;
     span{
       font-size: 12px;
+    }
+  }
+  .results .results-mid{
+    margin-top: 1%;
+    .logo-div{
+      width: 120px;
     }
   }
 }

@@ -4,7 +4,7 @@
   console.log(linkUrl)
   console.log(location.href.split('#')[0])
   $.ajax({
-    url: 'http://test.bossyi.cn/api/js_getsignpackage',
+    url: 'http://lzlj.bossyi.cn/api/js_getsignpackage',
     type: 'POST',
     data: { 'url': linkUrl },
     dataType: 'JSON',

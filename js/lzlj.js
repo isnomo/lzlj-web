@@ -159,7 +159,7 @@
     // JSON.stringify(resultsData)
     let resData =  resultsData.toString()
     $.ajax({
-      url: 'http://test.bossyi.cn/api/answer',
+      url: 'http://lzlj.bossyi.cn/api/answer',
       type: 'POST',
       data: { 'answer': resData },
       dataType: 'JSON',
