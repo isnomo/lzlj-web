@@ -110,7 +110,7 @@
             }, 500)
             setTimeout(() => {
               $('.results .info').removeClass('show')
-            }, 2500)
+            }, 4500)
           })
         }
       },
