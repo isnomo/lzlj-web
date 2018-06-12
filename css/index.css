@@ -671,6 +671,18 @@ html, body, form {
     top: 80px;
     right: 15px;
   }
+  .page-cover .page-cover-main .page-cover-title h3{
+    font-size: 18px;
+  }
+  .page-cover .page-cover-main .page-cover-img{
+    width: 62%;
+  }
+  .page-cover .page-cover-main .page-cover-tag{
+    margin: 10px 0;
+    span{
+      font-size: 12px;
+    }
+  }
 }
 
 
