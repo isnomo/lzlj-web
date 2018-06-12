@@ -369,7 +369,7 @@ html, body, form {
       
     }
     .results-top-img{
-      background-image: url('http://cdnvideo.airproce.com/bg/r1.png');
+      background-image: url('../img/bg/r1.png');
       background-repeat: no-repeat;
       background-position: center top;
       background-size: 100%;
@@ -407,7 +407,7 @@ html, body, form {
     padding-bottom: 2%;
     margin-top: 8%;
     .results-bottom__img{
-      background-image: url('http://cdnvideo.airproce.com/bg/r2.png');
+      background-image: url('../img/bg/r2.png');
       background-repeat: no-repeat;
       background-position: center -2px;
       background-size: 100%;
