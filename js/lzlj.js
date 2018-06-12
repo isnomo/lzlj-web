@@ -74,7 +74,10 @@
   // 兼容iphoneX
   if (winHeight / winWidth > 1.8) {
     $('.lzlj-main .bg-wrapper .page-select').css({ 'padding': '0 5% 20%' })
-    $('.results .results-bottom .results-bottom__btn').css({ 'bottom': '-10%' })
+    $('.results').css({ 'padding': '7%' })
+    $('.results .results-mid').css({ 'margin-top': '2%' })
+    $('.results .results-bottom').css({ 'margin-top': '10%' })
+    $('.results .results-bottom .results-bottom__btn').css({ 'margin-top': '10px' })
     
     // alert('长手机')
   }
@@ -110,12 +113,12 @@
             }, 500)
             setTimeout(() => {
               $('.results .info').removeClass('show')
-            }, 4500)
+            }, 3500)
           })
         }
       },
     },
-    // initialSlide :10,
+    initialSlide :10,
     allowTouchMove: false,
     // hashNavigation: {
     //   watchState: true,
@@ -177,8 +180,10 @@
 
   $(window).load(() => {
     $('.loading').fadeOut(300)
-    let imgHeight = $('.results .results-bottom .results-bottom__img').width() / 1.7
-    $('.results .results-bottom .results-bottom__img').height(imgHeight - 4)
+    let bottomHeight = $('.results .results-bottom .results-bottom__img').width() / 1.7
+    let topHeight = $('.results .results-top .results-top-img').width() / 1.1
+    $('.results .results-bottom .results-bottom__img').height(bottomHeight - 4)
+    $('.results .results-top').height(topHeight - 2)
   })
 
   $(window).scroll(() => {
