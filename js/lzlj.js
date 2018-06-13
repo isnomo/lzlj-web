@@ -79,6 +79,7 @@
     $('.results .results-bottom').css({ 'margin-top': '10%' })
     $('.results .results-bottom .results-bottom__btn').css({ 'margin-top': '10px' })
     $('.page-cover .page-cover-main .page-cover-title').css({ 'margin': '10% auto' })
+    $('.page-cover .page-cover-main .page-cover-img').css({ 'height': '40%' })
     
     // alert('长手机')
   }
@@ -119,7 +120,7 @@
         }
       },
     },
-    // initialSlide :10,
+    initialSlide :10,
     allowTouchMove: false,
     // hashNavigation: {
     //   watchState: true,

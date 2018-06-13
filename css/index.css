@@ -402,7 +402,7 @@ html, body, form {
   }
   .results-bottom{
     position: relative;
-    margin-top: 6%;
+    margin-top: 5%;
     .results-bottom__img{
       background-image: url('../img/bg/r2.png');
       background-repeat: no-repeat;
@@ -513,11 +513,12 @@ html, body, form {
     }
     .page-cover-img{
       height: 45%;
+      max-height: 50%;
       display: block;
       margin: 0 auto 5%;
     }
     .page-cover-tag{
-      margin: 15px 0;
+      margin: 3% 0;
       span{
         font-size: 15px;
         background: #fff;
@@ -551,7 +552,10 @@ html, body, form {
       }
     }
     .page-cover-btn{
-      margin-top: 8%;
+      position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
       button{
         width: 120px;
         height: 44px;
@@ -655,7 +659,7 @@ html, body, form {
   }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 360px){
   .lzlj-main .bg-wrapper .page-select .select-main .select-main__title h3 {
     font-size: 13px;
   }
@@ -669,14 +673,19 @@ html, body, form {
     margin-top: 10px;
   }
   .results .results-top .tags-right .tags-item{
-    font-size: 12px;
+    font-size: 13px;
+  }
+  .results .results-top .tags-left .tags-item{
+    font-size: 13px;
   }
   .results .results-bottom .results-bottom__title h3{
     font-size: 14px;
   }
   .results .results-bottom .results-bottom__btn div{
     font-size: 12px;
-    width: 40%;
+    width: 38%;
+    padding: 2%;
+    border: 2px solid #d79439;
   }
   .results .results-bottom{
     margin-top: 4%;
@@ -706,11 +715,8 @@ html, body, form {
   .page-cover .page-cover-main .page-cover-title h3{
     font-size: 18px;
   }
-  .page-cover .page-cover-main .page-cover-img{
-    width: 62%;
-  }
+
   .page-cover .page-cover-main .page-cover-tag{
-    margin: 10px 0;
     span{
       font-size: 12px;
     }
@@ -719,6 +725,9 @@ html, body, form {
     .logo-div{
       width: 120px;
     }
+  }
+  .page-cover .page-cover-main .page-cover-btn{
+    bottom: auto;
   }
 }
 
