@@ -71,7 +71,10 @@ html, body, form {
     }
   }
 }
-
+.num{
+  font-size: 14px;
+  text-align: right;
+}
 
 
 
@@ -117,6 +120,10 @@ html, body, form {
   }
   .resultData h3{
     font-size: 22px;
+  }
+  .num{
+    text-align: center;
+    margin-top: 20px;
   }
 }
 

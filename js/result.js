@@ -15,10 +15,12 @@
         $(this).find('span').html(resArr[i])
         $(this).find('div').css({'width' : itemWidth + '%'})
       })
-      console.log(resultData)
+      let allNum = resArr[0] + resArr[1] + resArr[2]
+      $('#num').html(allNum)
     },
     error: function (XMLHttpRequest, textStatus, errorThrown) {
       console.log(textStatus);
+      alert('网络连接失败！请稍后重试。')
     }
   })
 
