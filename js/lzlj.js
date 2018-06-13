@@ -75,9 +75,9 @@
   if (winHeight / winWidth > 1.8) {
     $('.lzlj-main .bg-wrapper .page-select').css({ 'padding': '0 5% 20%' })
     $('.results').css({ 'padding': '7%' })
-    $('.results .results-mid').css({ 'margin-top': '2%' })
-    $('.results .results-bottom').css({ 'margin-top': '10%' })
-    $('.results .results-bottom .results-bottom__btn').css({ 'margin-top': '10px' })
+    $('.results .results-mid').css({ 'margin-top': '5%' })
+    $('.results .results-bottom').css({ 'margin-top': '15%' })
+    $('.results .results-bottom .results-bottom__btn').css({ 'margin-top': '20px' })
     $('.page-cover .page-cover-main .page-cover-title').css({ 'margin': '10% auto' })
     $('.page-cover .page-cover-main .page-cover-img').css({ 'height': '40%' })
     
